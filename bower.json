@@ -1,0 +1,60 @@
+{
+    "name": "extraneous-ui",
+    "version": "1.0.0-SNAPSHOT",
+    "description": "extraneous-ui",
+    "main": "*",
+    "ignore": [
+        ".*",
+        "bin",
+        "data",
+        "test",
+        "tmp",
+        "Gruntfile.js",
+        "package.json",
+        "README.md"
+    ],
+    "dependencies": {
+        "requirejs": "2.1.16",
+        "requirejs-text": "2.0.*",
+        "require-css": "0.1.*",
+        "require-less": "0.1.*",
+        "jquery": "2.1.*",
+        "angular": "1.3.*",
+        "nullpointer-i18n": "git://github.com/newpointer/i18n-js.git",
+        "nullpointer-commons": "git://github.com/newpointer/commons-js.git",
+        "bootstrap": "http://getbootstrap.com/2.3.2/assets/bootstrap.zip"
+    },
+    "devDependencies": {},
+    "exportsOverride": {
+        "requirejs": {
+            "": "require.js"
+        },
+        "requirejs-text": {
+            "": "text.js"
+        },
+        "require-less": {
+            "": "*.js"
+        },
+        "jquery": {
+            "": "dist/jquery.js"
+        },
+        "sizzle": {},
+        "bootstrap": {
+            "css": "css/bootstrap.css"
+        },
+        "nullpointer-i18n": {
+            "": "i18n.js"
+        },
+        "nullpointer-commons": {
+            "lodash": "src/lodash",
+            "angular": "src/angular",
+            "nkb": "src/nkb"
+        },
+        "blueimp-*": {}
+    },
+    "private": true,
+    "resolutions": {
+        "requirejs": "2.1.16",
+        "jquery": "2.1.*"
+    }
+}
